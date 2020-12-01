@@ -9,16 +9,20 @@ require_relative '../lib/caesar_cipher'
 
       expect(s).to eq("Bmfy f xywnsl!")
     end
-   it "'ABCDE' offset by -2" do
+    it "'ABCDE' offset by -2" do
 
     s = caesar_cipher("ABCDE",-2)
 
     expect(s).to eq("YZABC")
+
   end
-  it "'w x y z' offset by 30" do
+  
+    it "'w x y z' offset by 30" do
 
     s = caesar_cipher("w x y z",30)
     
     expect(s).to eq("a b c d")
+
   end
+
 end
